@@ -4,7 +4,24 @@ html, body {
 
 .container {
     position: relative;
-    top: 50%;
-    transform: translateY(-100%);
+    top: 5%;
+    /*transform: translateY(-100%);*/
     text-align: center;
 }
+
+.display {
+    display: none;
+}
+
+
+
+
+/*.movieContainer {*/
+/*    display: flex;*/
+/*    float: left;*/
+/*}*/
+
+/*.formContainer {*/
+/*    display: flex;*/
+/*    float: right;*/
+/*}*/
