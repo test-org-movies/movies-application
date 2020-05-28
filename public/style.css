@@ -8,3 +8,20 @@ html, body {
     /*transform: translateY(-100%);*/
     text-align: center;
 }
+
+.display {
+    display: none;
+}
+
+
+
+
+/*.movieContainer {*/
+/*    display: flex;*/
+/*    float: left;*/
+/*}*/
+
+/*.formContainer {*/
+/*    display: flex;*/
+/*    float: right;*/
+/*}*/

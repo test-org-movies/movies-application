@@ -13,7 +13,29 @@
         <p>To get started, edit <code>src/index.js</code>.</p>
 
 
+<main class="row">
+<div class="movieContainer col-6">
+
+    <div id="movieList">
+
+    </div>
+
+
+</div>
+
+
+
+    <!-- Image loader -->
+    <div id='loader' style='display: none;'>
+        <img src='img/reload.gif' width='32px' height='32px' alt="loading">
+    </div>
+    <!-- Image loader -->
+
+
+
+
 <!--    form for movie title/ genre/ rating -->
+        <div class="formContainer col-6">
     <form>
         <div class="form-group">
             <label for="exampleFormControlInput1">Enter Movie Title </label>
@@ -23,11 +45,11 @@
             <label for="exampleFormControlSelect1">Movie Rating</label>
             <select class="form-control" id="exampleFormControlSelect1">
                 <option value="" disabled selected>Select your option</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+                <option value="1" id="star1">1</option>
+                <option value="2" id="star2">2</option>
+                <option value="3" id="star3">3</option>
+                <option value="4" id="star4">4</option>
+                <option value="5" id="star5">5</option>
             </select>
         </div>
 
@@ -35,14 +57,19 @@
             <label for="exampleFormControlSelect2">Movie Genre</label>
             <select class="form-control" id="exampleFormControlSelect2">
                 <option value="" disabled selected>Select your option</option>
-                <option value="comedy" >Comedy</option>
-                <option value="romance">Romance</option>
-                <option value="horror">Horror</option>
-                <option value="action">Action</option>
-                <option value="animated">Animated</option>
+                <option value="comedy" id="comedy1" >Comedy</option>
+                <option value="romance" id="romance1">Romance</option>
+                <option value="horror" id="horror1">Horror</option>
+                <option value="action" id="action1">Action</option>
+                <option value="animated" id="animated1">Animated</option>
             </select>
         </div>
     </form>
+
+<!--            end of form container-->
+        </div>
+
+</main>
 <!--        end of container div-->
     </div>
 
