@@ -10,7 +10,7 @@ sayHello('World');
 const {getMovies} = require('./api.js');
 
 getMovies().then((movies) => {
-  console.log('Here are all the movies:');
+  console.log('Here are all the AWESOME movies:');
   movies.forEach(({title, rating, id}) => {
     console.log(`id#${id} - ${title} - rating: ${rating}`);
   });
@@ -18,3 +18,4 @@ getMovies().then((movies) => {
   alert('Oh no! Something went wrong.\nCheck the console for details.')
   console.log(error);
 });
+
