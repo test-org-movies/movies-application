@@ -8,8 +8,6 @@
 </head>
 <body>
 
-<h1> test!!!!!!!!</h1>
-
     <div class="container">
         <h1>Hello There!</h1>
         <p>To get started, edit <code>src/index.js</code>.</p>
@@ -37,35 +35,36 @@
 
 
 <!--    form for movie title/ genre/ rating -->
-        <div class="formContainer col-6">
+        <div class="movieForm formContainer col-6">
     <form>
         <div class="form-group">
-            <label for="exampleFormControlInput1">Enter Movie Title </label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Movie Title">
+            <label for="movieTitle">Enter Movie Title </label>
+            <input type="text" class="title form-control" id="movieTitle" placeholder="Movie Title">
         </div>
         <div class="form-group">
-            <label for="exampleFormControlSelect1">Movie Rating</label>
-            <select class="form-control" id="exampleFormControlSelect1">
+            <label for="movieRating">Movie Rating</label>
+            <select class="form-control" id="movieRating">
                 <option value="" disabled selected>Select your option</option>
-                <option value="1" id="star1">1</option>
-                <option value="2" id="star2">2</option>
-                <option value="3" id="star3">3</option>
-                <option value="4" id="star4">4</option>
-                <option value="5" id="star5">5</option>
+                <option value="1" class="stars" id="star1">1</option>
+                <option value="2" class="stars" id="star2">2</option>
+                <option value="3" class="stars" id="star3">3</option>
+                <option value="4" class="stars" id="star4">4</option>
+                <option value="5" class="stars" id="star5">5</option>
             </select>
         </div>
 
         <div class="form-group">
-            <label for="exampleFormControlSelect2">Movie Genre</label>
-            <select class="form-control" id="exampleFormControlSelect2">
+            <label for="movieGenre">Movie Genre</label>
+            <select class="form-control" id="movieGenre">
                 <option value="" disabled selected>Select your option</option>
-                <option value="comedy" id="comedy1" >Comedy</option>
-                <option value="romance" id="romance1">Romance</option>
-                <option value="horror" id="horror1">Horror</option>
-                <option value="action" id="action1">Action</option>
-                <option value="animated" id="animated1">Animated</option>
+                <option value="comedy" class="genre" id="comedy1" >Comedy</option>
+                <option value="romance" class="genre" id="romance1">Romance</option>
+                <option value="horror" class="genre" id="horror1">Horror</option>
+                <option value="action" class="genre" id="action1">Action</option>
+                <option value="animated" class="genre" id="animated1">Animated</option>
             </select>
         </div>
+        <button class="addMovieBtn" type="submit">Add Movie</button>
     </form>
 
 <!--            end of form container-->
