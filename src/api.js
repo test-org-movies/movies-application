@@ -1,45 +1,45 @@
 module.exports = {
   getMovies: () => {
-    // return fetch('/api/movies')
-    //   .then(response => response.json());
-//   }
-// };
-
-
-
-$.ajax({
-  url: '/api/movies',
-  type: 'post',
-  data: {search:search},
-  beforeSend: function(){
-    // Show image container
-    $("#loader").show();
-    $("body").addClass('display');
-
-  },
-  success: function(response){
-  response.json();
-  },
-  complete:function(data){
-    // Hide image container
-    $("#loader").hide();
-    $("body").removeClass("display");
-  }
-});
-
-
-$(document).ajaxStart(function(){
-  // Show image container
-  $("#loader").show();
-});
-$(document).ajaxComplete(function(){
-  // Hide image container
-  $("#loader").hide();
-});
-
-
+    return fetch('/api/movies')
+      .then(response => response.json());
   }
 };
+
+
+
+// $.ajax({
+//   url: '/api/movies',
+//   type: 'post',
+//   data: {search:search},
+//   beforeSend: function(){
+//     // Show image container
+//     $("#loader").show();
+//     $("body").addClass('display');
+//
+//   },
+//   success: function(response){
+//   response.json();
+//   },
+//   complete:function(data){
+//     // Hide image container
+//     $("#loader").hide();
+//     $("body").removeClass("display");
+//   }
+// });
+//
+//
+// $(document).ajaxStart(function(){
+//   // Show image container
+//   $("#loader").show();
+// });
+// $(document).ajaxComplete(function(){
+//   // Hide image container
+//   $("#loader").hide();
+// });
+//
+//
+//   }
+// };
 
 
 //
