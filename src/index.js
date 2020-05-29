@@ -1,15 +1,6 @@
-/**
- * es6 modules and imports
- */
-import sayHello from './hello';
-
-sayHello('World');
-
-/**
- * require style imports
- */
 const {getMovies} = require('./api.js');
 const {addMovie} = require('./api.js');
+const {editMovie} = require('./api.js');
 
 getMovies().then((movies) => {
     renderMovies(movies)
@@ -51,5 +42,21 @@ $('.addMovieBtn').click(function (e) {
         (renderMovies(movies));
     });
     $('#myForm')[0].reset();
+});
+
+
+// edit movie function
+function renderForm(title, rating, genre){
+    let editMovieTitle = movies.title;
+    let editMovieStars = movies.rating;
+    let editMovieGenre = movies.genre;
+
+    $('#movieTitle').innerHTML(editMovieTitle);
+    $('#movieRating').innerHTML(editMovieStars);
+    $('#movieGenre').innerHTML(editMovieGenre);
+}
+$('li').click(function(e){
+    e.preventDefault();
+
 });
 

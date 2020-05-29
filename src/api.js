@@ -5,6 +5,13 @@ const options = {
   }
 };
 
+const editOptions = {
+  method: 'PATCH',
+  headers: {
+    'Content-Type': 'application/json',
+  }
+};
+
 module.exports = {
   getMovies: () => {
     return fetch('/api/movies')
@@ -14,5 +21,14 @@ module.exports = {
     options.body = JSON.stringify(moviePost);
     return fetch('/api/movies/', options)
         .then(response => response.json());
+  },
+  editMovie: (editPost) => {
+    editOptions.body = JSON.stringify(editPost);
+    return fetch(`/api/movies/${id}`, editOptions)
+        .then(response => response.json());
   }
 };
+
+
+
+
