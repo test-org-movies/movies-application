@@ -14,7 +14,7 @@ function renderMovies(movies) {
     movies.forEach(({title, rating, genre}) => {
         html +=
             `<ul> 
-    <li><b>${title}</b> <br> rating: ${rating} <br> genre: ${genre}</li>
+    <li>${title} <br> rating: ${rating} <br> genre: ${genre}</li>
     </ul>`;
     });
     $('#movieList').html(html);
@@ -55,14 +55,25 @@ function renderForm(title, rating, genre){
 
     $('#movieTitle').innerHTML(editMovieTitle);
     $('#movieRating').innerHTML(editMovieStars);
-    console.log($('#movieGenre').innerHTML(editMovieGenre));
+    $('#movieGenre').innerHTML(editMovieGenre);
 }
-$("#movieList").on('click','li',function(e) {
+
+//click li and console.log title rating genre id
+    //e.target target what was click
+    //jquery select e.target using $(e.target)
+    // traverse the dom to pull out the title, rating, id (if needed, include the id of the          .......us:(maybe reduce)
+        // add the id of the movie using the data attribute like data-id=SOME_ID to an element in the li
+
+// once you have the title, rating, genre, id create a new movie object and pass that to your editMovie function
+
+$("#movieList").on('click','ul',function(e) {
     e.preventDefault();
-    console.log(editMovie());
-    // getMovies().then((movies) => {
-    //     (renderMovies(movies));
-    // });
+    let target = e.target;
+    console.log($(target));
+    //class list = title
+    // console.log($(target));
+    // console.log(editMovie());
+
 });
 
 

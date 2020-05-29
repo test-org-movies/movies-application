@@ -22,9 +22,9 @@ module.exports = {
     return fetch('/api/movies/', options)
         .then(response => response.json());
   },
-  editMovie: (editPost) => {
-    editOptions.body = JSON.stringify(editPost);
-    return fetch(`/api/movies/id`, editOptions)
+  editMovie: (editMovie) => {
+    editOptions.body = JSON.stringify(editMovie);
+    return fetch(`/api/movies/${movies.id}`, editOptions)
         .then(response => response.json());
   }
 };
