@@ -1,5 +1,5 @@
 html, body {
-    height: 100%;
+    height: 30%;
 }
 
 .container {
@@ -21,24 +21,27 @@ html, body {
     overflow-y: auto;
     border-left: 8px solid black;
     border-top: 2px solid black;
-    height: 30%;
-    box-sizing: border-box;
+    height: 10%;
+    /*box-sizing: border-box;*/
     text-align: left;
 }
+
+/* width */
 ::-webkit-scrollbar {
-    /*width: 0px;*/
-    /*background: transparent; !* make scrollbar transparent *!*/
+    width: 10px;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
 
-
-/*.movieContainer {*/
-/*    display: flex;*/
-/*    float: left;*/
-/*}*/
-
-/*.formContainer {*/
-/*    display: flex;*/
-/*    float: right;*/
-/*}*/
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

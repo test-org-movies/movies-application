@@ -185,6 +185,35 @@
       "rating": "1",
       "genre": "comedy",
       "id": 31
+    },
+    {
+      "title": "That Darn Cat",
+      "rating": "1",
+      "genre": "comedy",
+      "id": 32
+    },
+    {
+      "title": "PowerPuff Girls",
+      "rating": "1",
+      "genre": "comedy",
+      "id": 33
+    },
+    {
+      "title": "Julia",
+      "rating": "1",
+      "genre": "comedy",
+      "id": 34
+    },
+    {
+      "title": "Shelby",
+      "genre": "comedy",
+      "id": 35
+    },
+    {
+      "title": "George of the Jungle",
+      "rating": "3",
+      "genre": "romance",
+      "id": 36
     }
   ]
 }

@@ -22,19 +22,19 @@ function renderMovies(movies) {
     let html = '';
     movies.forEach(({title, rating, genre}) => {
         html +=
-        `<ul> 
+            `<ul> 
     <li><b>${title}</b> <br> rating: ${rating} <br> genre: ${genre}</li>
     </ul>`;
     });
-   $('#movieList').html(html);
+    $('#movieList').html(html);
 }
 
 //movie post
 
 function newMovieObject(title, rating, genre) {
     let userMovieTitle = $('.title').val();
-    let userMovieStars = $('.stars').val();
-    let userMovieGenre = $('.genre').val();
+    let userMovieStars = $('#movieRating').val();
+    let userMovieGenre = $('#movieGenre').val();
 
     const newMovie = {
         'title': userMovieTitle,
@@ -49,7 +49,7 @@ $('.addMovieBtn').click(function (e) {
     addMovie(newMovieObject());
     getMovies().then((movies) => {
         (renderMovies(movies));
-});
-
+    });
+    $('#myForm')[0].reset();
 });
 
