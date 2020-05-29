@@ -15,5 +15,4 @@ module.exports = {
     return fetch('/api/movies/', options)
         .then(response => response.json());
   }
-
 };

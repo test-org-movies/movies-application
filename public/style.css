@@ -1,5 +1,5 @@
 html, body {
-    height: 100%;
+    height: 30%;
 }
 
 .container {
@@ -13,15 +13,35 @@ html, body {
     display: none;
 }
 
+.movieContainer{
+    overflow: hidden;
+}
 
+#movieList{
+    overflow-y: auto;
+    border-left: 8px solid black;
+    border-top: 2px solid black;
+    height: 10%;
+    /*box-sizing: border-box;*/
+    text-align: left;
+}
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
 
-/*.movieContainer {*/
-/*    display: flex;*/
-/*    float: left;*/
-/*}*/
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
 
-/*.formContainer {*/
-/*    display: flex;*/
-/*    float: right;*/
-/*}*/
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
