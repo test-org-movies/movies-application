@@ -6,7 +6,7 @@ const options = {
 };
 
 const editOptions = {
-  method: 'PATCH',
+  method: 'PUT',
   headers: {
     'Content-Type': 'application/json',
   }
@@ -24,7 +24,7 @@ module.exports = {
   },
   editMovie: (editPost) => {
     editOptions.body = JSON.stringify(editPost);
-    return fetch(`/api/movies/${id}`, editOptions)
+    return fetch(`/api/movies/id`, editOptions)
         .then(response => response.json());
   }
 };
