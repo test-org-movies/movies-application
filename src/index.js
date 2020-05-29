@@ -19,12 +19,14 @@ getMovies().then((movies) => {
 });
 
 function renderMovies(movies) {
+    let html = '';
     movies.forEach(({title, rating, genre}) => {
-        return $('#movieList').append
-        (`<ul> 
-    <li>${title} - rating: ${rating} - genre: ${genre}</li>
-    </ul>`);
+        html +=
+        `<ul> 
+    <li><b>${title}</b> <br> rating: ${rating} <br> genre: ${genre}</li>
+    </ul>`;
     });
+   $('#movieList').html(html);
 }
 
 //movie post
@@ -47,7 +49,7 @@ $('.addMovieBtn').click(function (e) {
     addMovie(newMovieObject());
     getMovies().then((movies) => {
         (renderMovies(movies));
-    });
+});
 
 });
 

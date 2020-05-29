@@ -113,6 +113,78 @@
       "rating": "1",
       "genre": "comedy",
       "id": 19
+    },
+    {
+      "title": "Intern",
+      "rating": "1",
+      "genre": "comedy",
+      "id": 20
+    },
+    {
+      "title": "Codeup",
+      "rating": "1",
+      "genre": "comedy",
+      "id": 21
+    },
+    {
+      "title": "Scary Movie",
+      "rating": "1",
+      "genre": "comedy",
+      "id": 22
+    },
+    {
+      "title": "Scary Movie 2",
+      "rating": "1",
+      "genre": "comedy",
+      "id": 23
+    },
+    {
+      "title": "Home Alone",
+      "rating": "1",
+      "genre": "comedy",
+      "id": 24
+    },
+    {
+      "title": "Home Alone",
+      "rating": "1",
+      "genre": "comedy",
+      "id": 25
+    },
+    {
+      "title": "Wreck It Ralph",
+      "rating": "1",
+      "genre": "comedy",
+      "id": 26
+    },
+    {
+      "title": "IT",
+      "rating": "1",
+      "genre": "comedy",
+      "id": 27
+    },
+    {
+      "title": "Wreck It Ralph",
+      "rating": "1",
+      "genre": "comedy",
+      "id": 28
+    },
+    {
+      "title": "Intersteller",
+      "rating": "1",
+      "genre": "comedy",
+      "id": 29
+    },
+    {
+      "title": "Home Alone",
+      "rating": "1",
+      "genre": "comedy",
+      "id": 30
+    },
+    {
+      "title": "hey",
+      "rating": "1",
+      "genre": "comedy",
+      "id": 31
     }
   ]
 }

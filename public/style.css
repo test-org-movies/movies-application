@@ -21,13 +21,13 @@ html, body {
     overflow-y: auto;
     border-left: 8px solid black;
     border-top: 2px solid black;
-    height: 65%;
-    box-sizing: content-box;
+    height: 30%;
+    box-sizing: border-box;
     text-align: left;
 }
 ::-webkit-scrollbar {
     /*width: 0px;*/
-    background: transparent; /* make scrollbar transparent */
+    /*background: transparent; !* make scrollbar transparent *!*/
 }
 
 
