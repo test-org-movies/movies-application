@@ -18,7 +18,9 @@ function renderMovies(movies) {
     </ul>`;
     });
     $('#movieList').html(html);
+    $('li').addClass('indMovie');
 }
+
 
 //movie post
 
@@ -53,10 +55,18 @@ function renderForm(title, rating, genre){
 
     $('#movieTitle').innerHTML(editMovieTitle);
     $('#movieRating').innerHTML(editMovieStars);
-    $('#movieGenre').innerHTML(editMovieGenre);
+    console.log($('#movieGenre').innerHTML(editMovieGenre));
 }
-$('li').click(function(e){
+$("#movieList").on('click','li',function(e) {
     e.preventDefault();
-
+    console.log(editMovie());
+    // getMovies().then((movies) => {
+    //     (renderMovies(movies));
+    // });
 });
+
+
+
+
+
 
