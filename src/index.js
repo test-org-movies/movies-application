@@ -1,25 +1,69 @@
+
+/**
+ * es6 modules and imports
+ */
+import sayHello from './hello';
+sayHello('World');
+
+/**
+ * require style imports
+ */
 const {getMovies} = require('./api.js');
-const {addMovie} = require('./api.js');
-const {editMovie} = require('./api.js');
 
+
+const renderMovies = () =>
 getMovies().then((movies) => {
-    renderMovies(movies)
-}).catch((error) => {
-    alert('Oh no! Something went wrong.\nCheck the console for details.');
-    console.log(error);
-});
-
-function renderMovies(movies) {
+    $('#movieList').html("");
     let html = '';
     movies.forEach(({title, rating, genre}) => {
         html +=
-            `<ul> 
+            `<ul>
     <li><b>${title}</b> <br> rating: ${rating} <br> genre: ${genre}</li>
-    </ul>`;
+    </ul>`
     });
-    $('#movieList').html(html);
+    console.log('Here are all the movies:');
+    movies.forEach(({title, rating, id}) => {
+        console.log(`id#${id} - ${title} - rating: ${rating}`);
+    });
     $('li').addClass('indMovie');
-}
+    $(html).appendTo("#movieList");
+}).catch((error) => {
+    alert('Oh no! Something went wrong.\nCheck the console for details.')
+    console.log(error);
+});
+renderMovies();
+
+
+
+
+
+
+
+
+
+// const {getMovies} = require('./api.js');
+const {addMovie} = require('./api.js');
+const {editMovie} = require('./api.js');
+//
+// getMovies().then((movies) => {
+//     renderMovies(movies)
+// }).catch((error) => {
+//     alert('Oh no! Something went wrong.\nCheck the console for details.');
+//     console.log(error);
+// });
+//
+// // function renderMovies(movies) {
+// //     $('#movieList').html('')
+//     let html = '';
+//     movies.forEach(({title, rating, genre}) => {
+//         html +=
+//             `<ul>
+//     <li><b>${title}</b> <br> rating: ${rating} <br> genre: ${genre}</li>
+//     </ul>`;
+//     });
+//     $('#movieList').html(html);
+//     $('li').addClass('indMovie');
+// // }
 
 
 //movie post
@@ -39,11 +83,8 @@ function newMovieObject(title, rating, genre) {
 
 $('.addMovieBtn').click(function (e) {
     e.preventDefault();
-    addMovie(newMovieObject());
-    getMovies().then((movies) => {
-        (renderMovies(movies));
-    });
-    $('#myForm')[0].reset();
+    addMovie(newMovieObject())
+    .then(renderMovies);
 });
 
 

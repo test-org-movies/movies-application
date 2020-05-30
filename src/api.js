@@ -17,6 +17,7 @@ module.exports = {
     return fetch('/api/movies')
       .then(response => response.json());
   },
+
   addMovie: (moviePost) => {
     options.body = JSON.stringify(moviePost);
     return fetch('/api/movies/', options)
