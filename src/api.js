@@ -33,3 +33,10 @@ module.exports = {
 
 
 
+///////////////////////////////////
+
+//  editMovie: (editPost) => {
+// editOptions.body = JSON.stringify(editPost);
+// return fetch(`/api/movies/${movies.id}`, editOptions)
+//     .then(response => response.json());
+// }

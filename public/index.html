@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>My Application</title>
+    <title>test</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
 </head>
-<span class="loader"><span class="loader-inner"></span></span>
 <body>
 
 
@@ -15,14 +14,13 @@
 
 
     <div class="container">
-        <h1>Reel Stars!</h1>
+        <h1>&#127902; &#127909; Reel Stars! &#127871; &#127902;</h1>
+        <hr>
 
 
 <main class="row">
 <div class="movieContainer col-6">
-    <div id="movieList">
-        <img src="img/popcornLoading.gif" id="loadingPic">
-    </div>
+    <div id="movieList"><img src="img/popcornLoading.gif" id="loadingPic"></div>
 </div>
 
 <!--    form for movie title/ genre/ rating -->
@@ -33,7 +31,7 @@
             <input type="text" class="title form-control" id="movieTitle" placeholder="Movie Title">
         </div>
         <div class="form-group">
-            <label for="movieRating">Movie Rating</label>
+            <label for="movieRating">&#11088;Movie Rating&#11088;</label>
             <select class="form-control" id="movieRating">
                 <option value="" disabled selected>Select your option</option>
                 <option value="1">&#11088; 1</option>
@@ -57,21 +55,30 @@
         </div>
         <button class="addMovieBtn" type="submit">Add Movie</button>
     </form>
-
+<hr>
 <!--            end of form container-->
-        </div>
 
-</main>
-    <div class="row">
+
+
+
+<!--        </div>-->
+<!--    <div class="row">-->
+
+
+
+
+
+
+
 <!--    starting edit form -->
-    <div class="movieForm formContainer col-6 float-right">
+    <div class="movieForm formContainer col-12">
         <form id="myEditForm">
             <div class="form-group">
-                <label for="editMovieTitle">Enter Movie Title </label>
+                <label for="editMovieTitle">Edit Movie Title </label>
                 <input type="text" class="title form-control" id="editMovieTitle" placeholder="Movie Title">
             </div>
             <div class="form-group">
-                <label for="editMovieRating">Movie Rating</label>
+                <label for="editMovieRating">&#11088;Edit Movie Rating&#11088;</label>
                 <select class="form-control" id="editMovieRating">
                     <option value="" disabled selected>Select your option</option>
                     <option value="1">&#11088;1</option>
@@ -83,7 +90,7 @@
             </div>
 
             <div class="form-group">
-                <label for="editMovieGenre">Movie Genre</label>
+                <label for="editMovieGenre">Edit Movie Genre</label>
                 <select class="form-control" id="editMovieGenre">
                     <option value="" disabled selected>Select your option</option>
                     <option value="comedy">Comedy</option>
@@ -93,16 +100,15 @@
                     <option value="animated">Animated</option>
                 </select>
             </div>
-            <button class="addMovieBtn" type="submit">Add Movie</button>
+            <button class="editMovieBtn" type="submit">Add Movie</button>
         </form>
 
         <!--            end of form container-->
     </div>
-
-    </div>
-
+</div>
 
         <!--        end of container div-->
+</main>
     </div>
 
 <!--    Bootstrap links-->
